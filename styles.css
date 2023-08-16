@@ -1,0 +1,230 @@
+:root {
+  --light-theme-color-bottom: #c6d4e7;
+  --light-theme-color-middle: #d5dde8;
+  --light-theme-color-top: #f1f2f6;
+  --light-theme-color-text: #1f2532;
+  --dark-theme-color-bottom: #3c4453;
+  --dark-theme-color-middle: #1f2532;
+  --dark-theme-color-top: #2b3142;
+  --dark-theme-color-text: #f1f2f6;
+  --color-bottom: var(--light-theme-color-bottom);
+  --color-middle: var(--light-theme-color-middle);
+  --color-top: var(--light-theme-color-top);
+  --color-text: var(--light-theme-color-text);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-bottom);
+  color: var(--color-text);
+  font-size: 1.5rem;
+  background-image: url("../assets/cubes-pattern.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  border: 1px solid var(--color-bottom);
+  background-color: var(--color-top);
+  color: grey;
+  font-family: "Kanit", sans-serif;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.modal-container {
+  background-color: rgba(31, 37, 50, 0.9);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-container .modal {
+  width: 70rem;
+  padding: 5rem;
+  background-color: var(--color-top);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.modal-container .modal > * {
+  width: 50rem;
+}
+.modal-container .modal button {
+  margin-bottom: 2.5rem;
+}
+
+.btnRollDice:active {
+  transform: scale(0.9);
+}
+
+.btn-group {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -2.5rem;
+}
+.btn-group button {
+  width: 25rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn__primary {
+  background-color: #1a644d;
+  color: var(--color-top);
+}
+.btn__primary:hover {
+  background-color: #258c6c;
+}
+.btn__primary--outlined {
+  background-color: transparent;
+  border: 1px solid #1a644d;
+  color: #1a644d;
+}
+.btn__primary--outlined:hover {
+  transform: scale(1.1);
+}
+.btn__secondary {
+  background-color: #7a1919;
+}
+.btn__secondary:hover {
+  background-color: #a42222;
+}
+.btn__secondary--outlined {
+  background-color: transparent;
+  border: 1px solid #7a1919;
+  color: var(--color-bottom) !important;
+}
+.btn__secondary--outlined:hover {
+  transform: scale(1.1);
+}
+.btn__toggle {
+  background-color: var(--color-top);
+  color: var(--color-text);
+  border-radius: 5rem;
+}
+
+.current-player {
+  background-color: var(--color-top) !important;
+}
+
+.text-primary {
+  font-size: 4rem;
+}
+
+.text-secondary {
+  font-size: 2.5rem;
+}
+
+.page-title {
+  margin: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.game {
+  display: flex;
+  width: 90rem;
+  position: relative;
+}
+.game__player {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: var(--color-middle);
+  padding: 10rem 0;
+}
+.game__player--roll-score {
+  background-color: #1a644d;
+  color: var(--color-top);
+  padding: 1rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 5rem;
+}
+.game__player--total-score {
+  background-color: transparent;
+  border: 1px solid #1a644d;
+  color: #1a644d;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.game__player--total-score span {
+  font-weight: 700;
+}
+.game__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  position: absolute;
+  top: 5rem;
+  left: calc(50% - 7.5rem);
+}
+.game__controls--dice-img img {
+  width: 5rem;
+}
+.game__controls--rolls-passed {
+  margin-top: 5rem;
+}
+.game__controls--rolls-passed span {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */

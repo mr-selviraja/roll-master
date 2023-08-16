@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Master | A Dice Game</title>
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!-- Google icons CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <section>
+        <div class="page-title">
+            <h1 class="text-primary">
+                Roll Master
+            </h1>
+    
+            <button class="btn btn__toggle" id="btnToggleTheme">
+                Dark Theme
+            </button> 
+        </div>
+        <!-- End of Page-title -->
+  
+
+        <div class="settings">
+            <label for="maxScoreInput">
+                <strong>Set Max Score </strong>&nbsp;
+                <input type="text" placeholder="Enter max score" id="maxScoreInput" />
+            </label>
+
+            <label for="maxRollsInput">
+                <strong>Set Max Rolls</strong> &nbsp;
+                <input type="text" placeholder="Enter max rolls" id="maxRollsInput" />
+            </label>
+        </div>
+        <!-- End of Settings -->
+
+        <div class="game">
+            <div class="game__player current-player" id="player1Div">
+                <h3 class="text-secondary" id="player1NameEl">
+                    Player1
+                </h3>
+
+                <p class="game__player--roll-score" id="player1DiceScore">
+                    0
+                </p>
+
+                <p class="game__player--total-score">
+                    Total Score
+                    <br />
+                    <span id="player1TotalScore">
+                        0
+                    </span>
+                </p>
+            </div>
+
+            <div class="game__player" id="player2Div">
+                <h3 class="text-secondary"  id="player2NameEl">
+                    Player2
+                </h3>
+
+                <p class="game__player--roll-score" id="player2DiceScore">
+                    0
+                </p>
+
+                <p class="game__player--total-score">
+                    Total Score
+                    <br>
+                    <span id="player2TotalScore">
+                        0
+                    </span>
+                </p>
+            </div>
+
+            <div class="game__controls">
+                <button class="btn btn__primary--outlined btnNewGame">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    New Game
+                </button>
+
+                <div class="game__controls--dice-img" id="rolledDice">
+                    <img  src="./assets/dice-4.svg" alt="dice image" />
+                </div>
+
+                <button class="btn btn__secondary btn__outlined btnRollDice">
+                    <span class="material-symbols-outlined">
+                        casino
+                    </span>
+                    Roll Dice
+                </button>
+
+                <p class="game__controls--rolls-passed">
+                    Rolls passed
+                    <br />
+                    <span class="text-primary" id="rollsPassed">
+                        0
+                    </span>
+                </p>
+            </div>
+        </div>
+        <!-- End of Game -->
+    </section>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Roll Master</h2>
+
+            <img style="width: 10rem; margin-bottom: 2.5rem;" src="./assets/dice-rolls.png" alt="dice rolls">
+
+            <p>
+                <strong>
+                    <span id="winner-name">Player</span>
+                </strong> 
+                won the Game..!
+            </p>
+
+            <div class="btn-group">
+                <button class="btn btn__primary--outlined btnNewGame">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    New Game
+                </button>
+
+                <button class="btn btn__secondary btn__outlined btnRollDice">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    Exit Game
+                </button>
+            </div>
+            <!-- End of Btn-group -->
+        </div>
+    </div>
+    <!-- End of Modal-container -->
+
+    <script src="./script.js"></script>
+</body>
+</html>

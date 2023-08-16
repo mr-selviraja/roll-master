@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A website that simulates a two player dice game",
+  "main": "script.js",
+  "scripts": {
+    "dev": "(start live-server) && (sass --watch ./sass/styles.scss:./styles.css)"
+  },
+  "keywords": [],
+  "author": "Selviraja Pasagadugula",
+  "license": "ISC"
+}
+

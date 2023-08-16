@@ -1,0 +1,22 @@
+:root {
+    --light-theme-color-bottom: #c6d4e7;
+    --light-theme-color-middle: #d5dde8;
+    --light-theme-color-top: #f1f2f6;
+    --light-theme-color-text: #1f2532;
+
+    --dark-theme-color-bottom: #3c4453;
+    --dark-theme-color-middle: #1f2532;
+    --dark-theme-color-top: #2b3142;
+    --dark-theme-color-text: #f1f2f6;
+
+    --color-bottom: var(--light-theme-color-bottom);
+    --color-middle: var(--light-theme-color-middle);
+    --color-top: var(--light-theme-color-top);
+    --color-text: var(--light-theme-color-text);
+}
+
+$color-primary: #1a644d;
+$color-secondary: #7a1919;
+
+$font-normal: 'Kanit', sans-serif;
+
