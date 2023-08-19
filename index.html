@@ -100,6 +100,11 @@
                         casino
                     </span>
                     Roll Dice
+
+                    <audio id="diceAudio">
+                        <source src="./assets/dice-audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </button>
 
                 <p class="game__controls--rolls-passed">
@@ -115,7 +120,7 @@
     </section>
 
     <div class="modal-container">
-        <div class="modal">
+        <d class="modal">
             <h2>Roll Master</h2>
 
             <img style="width: 10rem; margin-bottom: 2.5rem;" src="./assets/dice-rolls.png" alt="dice rolls">
@@ -127,22 +132,13 @@
                 won the Game..!
             </p>
 
-            <div class="btn-group">
-                <button class="btn btn__primary--outlined btnNewGame">
-                    <span class="material-symbols-outlined">
-                        add
-                    </span>
-                    New Game
-                </button>
-
-                <button class="btn btn__secondary btn__outlined btnRollDice">
-                    <span class="material-symbols-outlined">
-                        logout
-                    </span>
-                    Exit Game
-                </button>
-            </div>
-            <!-- End of Btn-group -->
+            <button class="btn btn__primary--outlined btnNewGame">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+                New Game
+            </button>
+            <!-- End of button -->
         </div>
     </div>
     <!-- End of Modal-container -->
