@@ -3,6 +3,11 @@
 ## Description
 
 Roll Master is a simple and interactive dice game app built as part of learning JQuery and JS OOPs.
+<<<<<<< HEAD
+
+=======
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 - It's a game between two players i.e., Player1 and Player2.
 - Players wins either on the basis of number of rolls done (or) score obtained by the Player.
@@ -10,8 +15,15 @@ Roll Master is a simple and interactive dice game app built as part of learning 
 - A new game can be started with just a click of "New Game" button.
 - UI can be toggled between the light and dark themes.
 
+<<<<<<< HEAD
 Roll Master can be a simple game for kids and children to have some fun. Web APIs like Browser DOM
 were used in the app making process.
+
+=======
+Roll Master can be a simple game for kids and children to have some fun. Web APIs like Browser DOM
+were used in the app making process.
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 ## Table of Contents
 
@@ -22,17 +34,28 @@ were used in the app making process.
 5. [Updates/Issues](#updates)
 6. [License](#license)
 
+# <<<<<<< HEAD
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
+
 ## Deployment
 
 [Live Demo] - https://glistening-heliotrope-e34a70.netlify.app/
 
-![jusDooo Preview](/assets/roll-master.png)
+<<<<<<< HEAD
+![Roll Master Preview](/assets/roll-master.png)
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 ## Built With
 
 - HTML
 - CSS
 - JQuery(JavaScript)
+
+# <<<<<<< HEAD
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 ## Installation
 
@@ -43,14 +66,26 @@ were used in the app making process.
    ```
 2. Run/Execute/Open the index.html file in a client like Web browser
 
+# <<<<<<< HEAD
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
+
 ## Authors
 
 [Selviraja Pasagadugula](https://github.com/mr-selviraja)
+
+# <<<<<<< HEAD
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 ## Updates
 
 - App functionality must be improved much more to meet the game responsiveness for better user experience.
 - OOPs concepts must be much properly implemented in such a way that converts most of the functions into methods of classes.
+
+# <<<<<<< HEAD
+
+> > > > > > > 1aa540d9e540b664802059730d1e57afb931b5ef
 
 ## License
 
