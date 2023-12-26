@@ -19,7 +19,7 @@ were used in the app making process.
 2. [Built With](#built-with)
 3. [Installation](#installation)
 4. [Authors](#authors)
-5. [Issues/Updates](#issues)
+5. [Updates/Issues](#updates)
 6. [License](#license)
 
 
@@ -52,7 +52,7 @@ were used in the app making process.
 [Selviraja Pasagadugula](https://github.com/mr-selviraja)
 
 
-## Issues/Updates
+## Updates
 
 - App functionality must be improved much more to meet the game responsiveness for better user experience.
 - OOPs concepts must be much properly implemented in such a way that converts most of the functions into methods of classes.
