@@ -27,7 +27,7 @@ were used in the app making process.
 
 [Live Demo] - https://glistening-heliotrope-e34a70.netlify.app/
 
-![Roll Master Preview](/images/roll master.png)
+![Roll Master Preview](/assets/roll master.png)
 
 
 ## Built With
